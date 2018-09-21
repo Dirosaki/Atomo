@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    
+    
+}
+
+.fora{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: absolute;
+    margin: 0 auto;
+    animation: div3 3s linear infinite alternate;
+}
+
+.meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    border: double 20px red;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 20px double green;
+    border-radius: 50%;
+    animation: div2 8s infinite linear;
+    position: absolute;
+    
+    
+}
+
+.dentro{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    border: double 20px blue;
+    border-bottom: transparent;
+    border-top: transparent;
+    border-right: 20px double yellow;
+    border-radius: 50%;
+    animation: div1 8s infinite linear;
+    position: relative;
+}
+
+@keyframes div1 {
+    0%{
+        transform: rotate(0) scaleY(1);
+    }
+    100%{
+        transform: rotate(360deg) scaleY(-1);
+    }
+}
+@keyframes div2 {
+    0%{
+        transform: rotate(0) scaleX(1);
+    }
+    100%{
+        transform: rotate(-360deg) scaleX(-1);
+    }
+}
+
+@keyframes div3 {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(4.5)
+    }
+}
